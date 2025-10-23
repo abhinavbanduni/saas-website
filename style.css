@@ -1,0 +1,447 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    font-family: "poppins", sans-serif;
+    font-size: 16px;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+:root {
+    --primary-color: #4891ff;
+    --light-color: #f4f4f6;
+    --dark-color: #111;
+}
+
+/* UTILITY SETTINGS */
+
+a{
+    text-decoration: none;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 15px 0px;
+}
+
+.container-sm{
+    width: 800px;
+    margin:0 auto;
+}
+
+.bg-dark{
+    background-color: #000;
+    color: white;
+}
+
+.bg-gray{
+    background-color: var(--dark-color);
+    color: white;
+}
+
+.bg-light{
+    background-color: var(--light-color);
+    color: #111;
+}
+
+.light{
+    color: #515050;
+}
+
+.light-2{
+    color: rgb(225, 219, 219);
+}
+
+/* NAVBAR STYLING */
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+ul li {
+    padding: 10px 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.5s;
+    color: #111;
+}
+
+ul li a:hover {
+    color: var(--primary-color);
+}
+
+
+/* HERO SECTION STYLING  */
+
+
+.hero .container{
+    background-image: url(images/hero-bg.png) ;
+    background-repeat: no-repeat;
+    height: 550px;
+    background-size: contain;
+    background-position: bottom;
+}
+
+.hero .container h1{
+    width: 70%;
+}
+
+.hero .container p{
+    width: 45%;
+}
+
+.btn-row {
+    display: flex;
+    margin: 25px 0px 10px;
+}
+
+.btn-row .button1{
+    margin-right: 20px;
+}
+
+.btn-row .button1 a{
+    color: white;
+}
+.btn-row .button2 a{
+    color: var(--dark-color);
+    transition: 0.5s;
+}
+
+.btn-row .button2 a i{
+   margin-right: 7px;
+}
+
+.btn-row .button2 a:hover{
+    color: var(--primary-color);
+}
+
+/* VIDEO SECTION */
+
+.video{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.video h2{
+    padding: 24px 0px 20px;
+}
+
+.video-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.vid{
+    margin-bottom: 20px;
+}
+
+
+/* TESTIMONIALS STYLING  */
+
+.testimonials{
+    background-color: var(--dark-color);
+    color: white;
+    padding-bottom: 30px;
+}
+
+.testimonials .container .test-heading{
+    width:700px;
+    margin-bottom: 40px;
+}
+
+.test-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.test-cards .card p:nth-child(2){
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.card{
+    background-color: white;
+    color: #000;
+    padding: 20px 15px;
+    border-radius: 12px;
+}
+
+
+
+/* PRICING STYLING */
+
+.pricing{
+    margin-bottom: 30px;
+}
+
+.pricing-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing-cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    margin-top: 30px;
+    place-items: center;
+}
+
+.pricing-cards:nth-child(2) p{
+    padding: 10px 0px 20px;
+}
+
+.cards {
+    width: 330px;
+    padding: 25px 28px;
+    border-radius: 15px;
+    
+}
+
+.cards ul{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0px 20px;
+    
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    opacity: 0.4;
+    background-color: #fff;
+    margin: 15px 0px ;
+}
+
+.cards h1{
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.cards h1 span{
+    font-weight: 500;
+}
+
+.small{
+    height: 580px;
+}
+
+
+/* FAQ STYLING */
+
+.faq{
+    padding: 40px 0px ;
+}
+
+.faq-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq-heading ul {
+    cursor: pointer;
+}
+
+.faq-heading ul li{
+    margin: 0px 15px;
+}
+
+.faq .faq-group{
+    border-bottom: 2px solid #ccc;
+    padding: 20px 0px ;
+}
+
+.faq .faq-group .faq-ques{
+    padding: 15px 0px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.faq .faq-group .faq-ques h4{
+    font-weight: 600;
+    width: 95%;
+}
+
+.faq .faq-group .faq-ques i{
+    position: absolute;
+    right: 0;
+    top: 40px;
+    size: 1.3rem;
+    cursor: pointer;
+}
+
+.faq .faq-group .faq-body{
+    display: none;
+}
+
+.faq .faq-group .faq-body.open{
+    display: block;
+}
+
+
+/* FOOTER STYLING*/
+
+.footer{
+    padding: 40px 20px 50px 45px;
+}
+
+.mid{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+.newsletter {
+    margin-top: 20px ;
+    width:30%;
+    padding: 20px 10px ;
+    background-color: white;
+    color: var(--dark-color);
+    border-radius:10px ;
+}
+
+.newsletter h4{
+    font-weight: 500;
+}
+
+.newsletter p{
+    padding: 8px 0 12px;
+}
+
+.newsletter-end {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    gap: 15px;
+
+}
+
+.newsletter textarea{
+    height: 47px;
+    resize: none;
+    text-align: left;
+    align-content: center;
+    font-size: 18px;
+    padding: 0px 0px 10px ;
+    overflow-y: hidden;
+    font-weight: 500;
+    font-style: 'poppins' , sans-serif;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+}
+
+.menu ul li:first-child{
+    color: white;
+    font-weight: 500;
+}
+
+.menu ul li{
+    color: #ccc;
+}
+
+.menu ul{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 39px 0px 68px;
+}
+
+.socials {
+    padding: 30px 0px 30px 0px ;
+}
+
+.socials i{
+    margin-left: 15px ;
+    color: #ccc;
+}
+
+.footer p{
+    color: #ccc;
+}
+
+
+
+/* BUTTON STYLING */
+
+.btn{
+    padding: 13px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.5s;
+    text-align: center;
+
+}
+
+.btn:hover{
+    opacity: 8;
+}
+
+.btn-primary{
+    background-color: var(--primary-color);
+    color:  white;
+}
+
+.btn-light{
+    background-color: var(--light-color);
+}
+
+/* TEXT STYLING */
+
+.text-xxl{
+    font-size: 3rem;
+    line-height: 1.2;
+    margin: 20px 0px 20px;
+}
+.text-xl{
+    font-size: 2.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 40px 0 20px;
+}
+.text-md{
+    font-size: 1.4rem;
+    line-height: 1.3;
+    font-weight: 300;
+}
+.text-sm{
+    font-size: 0.9rem;
+    line-height: 1.2;
+    margin: 10px 0px 10px;
+}
+
+.text-alignn{
+    text-align: center;
+}
+
+.text-md2 {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 20px 0 10px;
+}
